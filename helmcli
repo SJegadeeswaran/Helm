@@ -1,0 +1,14 @@
+helm template nginx
+helm lint nginx
+helm install k8s nginx
+
+helm create chartname
+helm template chartname
+helm lint chartname
+helm install anyname chartname
+helm uninstall k8srtp-receive chartname
+
+
+helm list --all-namespaces
+helm uninstall k8s --namespace default
+helm list --all-namespaces
